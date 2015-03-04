@@ -31,7 +31,7 @@
   </Environment>
   <Data>
     <Volume>
-      <HostDir>/mnt/usr/appdata/huginn</HostDir>
+      <HostDir>/mnt/user/appdata/huginn/mysql</HostDir>
       <ContainerDir>/var/lib/mysql</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
