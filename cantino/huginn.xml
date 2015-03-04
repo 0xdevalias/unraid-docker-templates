@@ -6,7 +6,9 @@
     [b][span style='color: #E80000;']Directions:[/span][/b][br]
     [b]/var/lib/mysql[/b] : MySQL data will be stored here.[br]
     [br]
-    Note: It's important to ensure that the DO_NOT_SEED environment variable is defined after initial run (otherwise the default agents will be added back each time the container restarts)
+    Note: It's important to ensure that the DO_NOT_SEED environment variable is defined after initial run (otherwise the default agents will be added back each time the container restarts)[br]
+    [br]
+    You can find all of the other configurable environment variables listed at the docker hub.
   </Description>
   <Registry>https://registry.hub.docker.com/u/cantino/huginn/</Registry>
   <GitHub>https://github.com/cantino/huginn/tree/master/</GitHub>
