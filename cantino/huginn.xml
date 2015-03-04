@@ -5,7 +5,9 @@
     Huginn is a system for building agents that perform automated tasks for you online. They can read the web, watch for events, and take actions on your behalf. Huginn's Agents create and consume events, propagating them along a directed graph. Think of it as a hackable Yahoo! Pipes plus IFTTT on your own server. You always know who has your data. You do.[br][br]
     [b][span style='color: #E80000;']Directions:[/span][/b][br]
     [b]/var/lib/mysql[/b] : MySQL data will be stored here.[br]
-   </Description>
+    [br]
+    Note: It's important to ensure that the DO_NOT_SEED environment variable is defined after initial run (otherwise the default agents will be added back each time the container restarts)
+  </Description>
   <Registry>https://registry.hub.docker.com/u/cantino/huginn/</Registry>
   <GitHub>https://github.com/cantino/huginn/tree/master/</GitHub>
   <Repository>cantino/huginn</Repository>
@@ -21,7 +23,12 @@
       </Port>
     </Publish>
   </Networking>
-  <Environment/>
+  <Environment>
+    <Variable>
+      <Name>CHANGEME-DO_NOT_SEED</Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
   <Data>
     <Volume>
       <HostDir>/mnt/usr/appdata/huginn</HostDir>
